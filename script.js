@@ -20,7 +20,7 @@ var init = function() {
     
     glitchInterval = setInterval(function() {
         clear();
-        context.drawImage(img, 0, 0, img.width, 960, offset, 0, w - (offset * 2), h);
+        context.drawImage(img, 0, -110, img.width, 960, offset, 0, w - (offset * 2), h);
         setTimeout(glitchImg, randInt(250, 1000));
     }, 500);
 };
